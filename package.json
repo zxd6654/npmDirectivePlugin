@@ -1,8 +1,8 @@
 {
   "name": "zxd-vue-toast",
-  "version": "0.1.0",
-  "description": "vue-toast test", 
-  "main": "lib/toast.umd.min.js", 
+  "version": "0.1.1",
+  "description": "vue-toast test",
+  "main": "lib/toast.umd.min.js",
   "author": "love-mcdull",
   "private": false,
   "scripts": {
