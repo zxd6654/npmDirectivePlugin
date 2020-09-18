@@ -1,23 +1,54 @@
-# vue-toast-plugin
+# zxd-vue-toast
 
-## Project setup
-```
-npm install
-```
+## Installation
 
-### Compiles and hot-reloads for development
+### npm
 ```
-npm run serve
+npm install zxd-vue-toast
 ```
 
-### Compiles and minifies for production
+### CDN
 ```
-npm run build
+<script src="https://unpkg.com/zxd-vue-toast@0.1.0/lib/toast.umd.min.js"></script>
+<script>
+  Vue.use(VueLazyload)
+  ...
+</script> 
 ```
 
-### Lints and fixes files
+### Usage
 ```
-npm run lint
+import Vue from "vue";
+import App from "./App.vue";
+
+Vue.config.productionTip = false;
+
+import toast from "zxd-vue-toast";
+Vue.use(toast);
+
+new Vue({
+  render: (h) => h(App),
+}).$mount("#app");
+
+```
+
+```
+<template>
+  <div id="app">
+    <button @click="openToast">弹出Toast按钮</button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "App",
+  methods: {
+    openToast() {
+      this.$toast("ZhuXiaodong directive toast plugin", 2000);
+    },
+  },
+};
+</script>
 ```
 
 ### Customize configuration
