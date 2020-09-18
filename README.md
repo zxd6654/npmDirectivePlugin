@@ -9,9 +9,9 @@ npm install zxd-vue-toast
 
 ### CDN
 ```
-<script src="https://unpkg.com/zxd-vue-toast@0.1.0/lib/toast.umd.min.js"></script>
+<script src="https://unpkg.com/zxd-vue-toast@0.1.2/lib/toast.umd.min.js"></script>
 <script>
-  Vue.use(VueLazyload)
+  Vue.use(ToastPlugin)
   ...
 </script> 
 ```
